@@ -1,0 +1,13 @@
+schema_version = 1
+expansion_papers = 10
+fusion_depths = [25, 50]
+primary_fusion_depth = 50
+rrf_constant = 60
+rerank_depth = 20
+rerank_batch = 8
+rerank_max_tokens = 320
+reranker_revision = "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+reranker_sha256 = "c80a8b34256ea453093d612e3ac48d3d965a0c0a48c7906709af8b8e28461bf9"
+reranker_tokenizer_sha256 = "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66"
+bootstrap_seed = 42
+bootstrap_replicates = 2000

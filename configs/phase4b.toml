@@ -1,0 +1,6 @@
+schema_version = 1
+protocol = "prompt-recovery-v1"
+prompt_conditions = ["A", "B", "C"]
+synthetic_formats = ["plain", "structured"]
+minimum_supported_answers = 4
+minimum_native_abstentions = 2

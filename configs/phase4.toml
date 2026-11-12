@@ -1,0 +1,11 @@
+schema_version = 1
+prompt_version = "grounded-claims-v1"
+context_window = 2048
+evidence_tokens = 1250
+max_passages = 5
+max_output = 176
+threads = 4
+seed = 42
+model_revision = "91cad51170dc346986eccefdc2dd33a9da36ead9"
+model_sha256 = "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e"
+runtime_tag = "b7300"

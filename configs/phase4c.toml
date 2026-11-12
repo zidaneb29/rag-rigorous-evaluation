@@ -1,0 +1,25 @@
+protocol = "phase4c-v1"
+prompt = "phase4b-C"
+model = "Qwen/Qwen2.5-7B-Instruct-GGUF"
+revision = "293ca9a10157b0e5fc5cb32af8b636a88bede891"
+quantization = "Q4_K_M"
+license = "Apache-2.0"
+backend = "llama-cpp-python"
+backend_version = "0.3.16"
+backend_source_sha256 = "34ed0f9bd9431af045bb63d9324ae620ad0536653740e9bb163a2e1fcb973be6"
+seed = 42
+confirmation_seed = 4403
+temperature = 0.0
+context_window = 2048
+evidence_tokens = 1250
+max_passages = 5
+max_output = 176
+minimum_free_gpu_mib = 8192
+
+[[shards]]
+name = "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf"
+sha256 = "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+
+[[shards]]
+name = "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf"
+sha256 = "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"

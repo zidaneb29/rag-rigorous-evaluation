@@ -1,0 +1,12 @@
+schema_version = 1
+data = "data"
+model = "model"
+development_run = "artifacts/pilot-cold"
+development_vectors = "artifacts/cache"
+evaluation_run = "artifacts/phase5-heldout"
+evaluation_report_sha256 = "ac2320eaebd476e9ff39f3f8c9cedca97bfa8f1cdf713b9a58ce089856dd5654"
+evaluation_snapshot = "results/heldout-dashboard.json"
+evaluation_snapshot_sha256 = "21fc4fcbe7dcf976d453f25ed366c31188764d257a8dd678ece19cec42c843f9"
+default_method = "dense"
+default_top_k = 5
+max_top_k = 20

@@ -1,0 +1,13 @@
+protocol = "qasper-retrieval-v1"
+seed = 42
+max_projected_seconds = 1200
+subset_papers = 40
+settings = ["paper", "split-title"]
+cutoffs = [1, 5, 10, 20]
+bootstrap_seed = 42
+bootstrap_draws = 2000
+bootstrap_interval = "percentile 95%, resample papers, question-weighted"
+sample = "seeded shuffle of sorted test paper IDs after duplicate quarantine; all questions on selected papers"
+evidence = "Phase 3 exact paragraph and unique section-heading audit, complete text annotations only"
+duplicates = "exact ID, normalized title, normalized body, or >=80% shared long paragraphs (min 3); near titles Jaccard >=0.85 (min 5 tokens)"
+robustness = ["original versus title cue on identical development candidates", "paper-scoped evidence mapping sensitivity by section use"]
