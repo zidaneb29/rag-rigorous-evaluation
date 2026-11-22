@@ -24,6 +24,22 @@ MiniLM improved paper-scoped Recall@10 over RRF by **.103** (paired 95% interval
 3. Map evidence to paragraphs and unique section headings. Score completed annotated paragraphs on a shared eligible population. Estimate paired uncertainty by resampling papers.
 4. Show live search over **20 prepared development papers**. The separate dashboard reads validated, recorded held-out results and never runs evaluation from the interface.
 
+## Streamlit Interface
+
+Search 20 prepared QASPER development papers with BM25, BGE-small, reciprocal rank fusion (RRF), or RRF with MiniLM reranking. Inspect ranked evidence passages and their source metadata, then use the dashboard to compare frozen held-out retrieval quality and CPU latency.
+
+![Research paper explorer with a selected paper, a technical question, BGE-small, and Top-k set to 5](docs/images/streamlit-explorer.png)
+
+*Research paper explorer. A paper-scoped BGE-small query configured to return five passages.*
+
+![Five ranked BGE-small results with the first passage expanded to show its text, cosine score, and source identifiers](docs/images/streamlit-evidence.png)
+
+*Ranked evidence. The top passage shows its source section, paragraph and chunk IDs, and character offsets. Text as extracted by QASPER from [Vu et al. (2016), §6](https://aclanthology.org/N16-1065/), © 2016 Association for Computational Linguistics, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).*
+
+![Paper-scoped dashboard with sample counts, a Recall at 10 chart, and ranking metrics for all four configurations](docs/images/streamlit-dashboard.png)
+
+*Evaluation dashboard. Paper-scoped results for the deterministic held-out sample of 40 papers and 156 questions, with 126 eligible for evidence-ranking metrics.*
+
 ## Run locally on Windows
 
 Python 3.12 is the verified clean-install environment. An internet connection is needed initially for Python packages and the official assets. The prepared app then runs locally on the CPU.
